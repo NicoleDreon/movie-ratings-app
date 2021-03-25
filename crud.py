@@ -14,11 +14,11 @@ def create_user(email, password):
     return user
 
 
-def create_movie(title, overview, relese_date, poster_path):
+def create_movie(title, overview, release_date, poster_path):
     """Create and return a new movie."""
 
     movie = Movie(title=title, overview=overview,
-                  relese_date=relese_date, poster_path=poster_path)
+                  release_date=release_date, poster_path=poster_path)
 
     db.session.add(movie)
     db.session.commit()
