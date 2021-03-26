@@ -24,8 +24,8 @@ with open('data/movies.json') as f:
 movies_in_db = []
 for movie in movie_data:
     # TODO: get the title, overview, and poster_path from the movie
-    # dictionary. Then, get the release_date and convert it to a
     # datetime object with datetime.strptime
+    # dictionary. Then, get the release_date and convert it to a
     title, overview, poster_path = (
         movie['title'], movie['overview'], movie['poster_path'])
 
